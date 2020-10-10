@@ -1,0 +1,5 @@
+{
+  "code-runner.executorMapByFileExtension": {
+    ".f90": "fortran"
+  }
+}
