@@ -1,4 +1,5 @@
 {
-  "dimmer.enabled": false
+  "dimmer.enabled": false,
+  "reveal.enabled": false
   
 }

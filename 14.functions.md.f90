@@ -7,6 +7,8 @@ program functions
   
   call square_cube(5, square, cube)
   print *, square, cube
+
+  print *, "Factorial ", factorial(3)
   
   contains
     integer function get_sum(n1, n2)
@@ -36,4 +38,5 @@ program functions
         o = factorial(n - 1) * n
       end if
     end function
+
 end program functions
