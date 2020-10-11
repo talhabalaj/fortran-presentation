@@ -1,5 +1,4 @@
 {
-  "code-runner.executorMapByFileExtension": {
-    ".f90": "fortran"
-  }
+  "dimmer.enabled": false
+  
 }
