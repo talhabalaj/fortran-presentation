@@ -4,11 +4,11 @@ program data_types
 
   implicit none
   
-  real, parameter :: PI = 3.1415
-  real :: num = 0.1
-  double precision :: dbl = 0.111111111111111d+0
-  logical :: is_mad = .false.
-  character(len=10) :: name = "Talha"
-  complex :: com_num = (1, 2)
+  real :: num = 0.1 ! basically float
+  real, parameter :: PI = 3.141500 ! constant float 6digit
+  double precision :: dbl = 0.111111111111111d+0 ! double 15digit 
+  logical :: is_mad = .false. ! boolean
+  character(len=10) :: name = "Talha"  ! string 
+  complex :: com_num = (1, 2) ! 1 + 2i
 
 end program data_types

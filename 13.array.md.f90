@@ -3,9 +3,10 @@ program arrays
   implicit none
   ! ----- ARRAYS -----
   ! Create ARRAY
+  ! index start with 1
   integer, dimension(1:5) :: a1
   ! Create multidimensional array (Matrix)
-  integer, dimension(5,5) :: a4
+  integer, dimension(1:5,1:5) :: a4
   ! Dynamic Array  
   integer, dimension(:), allocatable :: a5
   integer :: size_of_array
@@ -15,30 +16,34 @@ program arrays
 
   do n = 1, 5
     a1(n) = n * n
+    ! a1[n] = n * n // C 
   end do
 
   do n = 1, 5
-    print 100, "-->", a1(n)
-    100 format (a5, i3)
+    print *, "-->", a1(n)
   end do
 
+  ! Matrices
   do x = 1, 5
     do y = 1, 5
       a4(x, y) = x * y
+      ! a4[x][y] = x * y // C
     end do
   end do
 
   do x = 1, 5
     do y = 1, 5
+      ! write (destination, format, options) ...args
       write (*, "(i5)", advance = "no") a4(x, y)
     end do
     write (*,*)
   end do
       
   do x = 1, 5
-    print "(5i5)", (a4(x, y), y = 1, 5)
+    print "(5i5)", ( a4(x, y), y = 1, 5) 
   end do
 
+  ! dynamic array
   print *, "phir kitne size ki chahiye?"
   read *, size_of_array
   allocate(a5(1:size_of_array))

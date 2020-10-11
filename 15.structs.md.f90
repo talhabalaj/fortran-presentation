@@ -20,14 +20,14 @@ program structs
   print "(a9, f5.2)", "Credits: ", cust%credits
 
   do n = 1, 5
-    cust(n)%name = "Talha Balaj"
-    cust(n)%age = 19
-    cust(n)%credits = 19.92634
+    cust_array(n)%name = "Talha Balaj"
+    cust_array(n)%age = 19
+    cust_array(n)%credits = 19.92634
   end do
 
   do n = 1, 5
-    print *, cust(n) % name
-    print *, cust(n) % age
-    print *, cust(n) % credits
+    print *, cust_array(n) % name
+    print *, cust_array(n) % age
+    print *, cust_array(n) % credits
   end do
 end program 

@@ -6,6 +6,10 @@ program conditionals
   ! Relational Operators : == /= > < >= <=
   ! Logical Operators : .and. .or. .not.
 
+  !if ( condition ) then
+  !  statement(s);
+  !end if
+
   if (5 > 2) then 
     print *, "5 is greater than 2, apko nahi pata?"
   end if
@@ -22,7 +26,7 @@ program conditionals
   else if (age > 85 .and. age <= 100) then
     print *, "u r too old!"
   else
-    print *, "u must be cyborg!"
+    print *, "u must be a cyborg! if it is in your program u r allowed"
   end if
 
   select case (age)
@@ -33,7 +37,7 @@ program conditionals
   case (86:100)
     print *, "u r too old!"
   case default
-    print *, "u must be cyborg!"
+    print *, "u must be a cyborg! if it is in your program u r allowed"
   end select
 
 
