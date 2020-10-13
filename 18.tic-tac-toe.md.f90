@@ -135,7 +135,7 @@ program tictactoe
         subroutine draw_board()
             integer :: i = 0, j = 0
            
-            call system('cls')
+            call system('clear')
             write(*, *)
             print *, "Tic Tac Toe"
             write(*, *)
